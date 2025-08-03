@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çekiliş Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="raffle-app">
+        <h1>🎁 Çekiliş Uygulaması</h1>
+
+        <!-- Katılımcı Ekleme -->
+        <div class="input-section">
+            <input type="text" id="participantInput" placeholder="Katılımcı Adı Ekleyin...">
+            <button id="addParticipantButton">Ekle</button>
+        </div>
+
+        <!-- ✅ Dosyadan Katılımcı Yükleme -->
+        <div class="file-section">
+            <input type="file" id="fileInput" accept=".txt,.csv">
+            <button id="uploadFileButton">📂 Dosyadan Yükle</button>
+        </div>
+
+        <!-- Katılımcı Listesi -->
+        <ul id="participantList"></ul>
+
+        <!-- Çekiliş Butonu -->
+        <button id="drawButton">🎁 Çekiliş Yap</button>
+        <p id="winner" class="winner"></p>
+    </div>
+
+    <!-- Konfeti Efekti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
